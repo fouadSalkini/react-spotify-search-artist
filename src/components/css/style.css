@@ -1,0 +1,267 @@
+body,div{
+	position:relative;
+	}
+header {
+    width: 100%;
+    background: #000;
+    padding: 10px 0;
+}
+
+ul,li{
+	list-style:none;
+	margin:none;
+	padding:none;
+}
+ul.artists-albums{
+	padding-inline-start: 0px;
+	color:grey;
+	font-size:13px;
+	font-weight:bold;
+}
+
+.album-desc h4 {
+    margin: 0;
+    margin-top:10px;
+    font-size:17px;
+}
+
+
+.album-info{
+margin-top:20px;
+font-size:13px;
+color:grey;
+padding-bottom: 30px;
+}
+
+.album-info .followers{
+	margin:0;
+}
+
+.album-link{
+	position:absolute;
+	bottom:0px;
+	left:0;
+	padding:3px 0;
+	width:100%;
+	text-align: center;
+	background: #eee;
+	border-top:solid 1px lightgrey;
+}
+a{text-decoration:none !important;}
+a:hover{color: #1ed760 !important}
+
+header a{text-decoration:none;}
+
+img{max-width:100%;}
+
+header .logo{width:150px;    display: inline-block;}
+
+nav.navbar.navbar-default, nav.navbar.navbar-default li {
+    display: inline-block;
+}
+
+li {
+    display:inline-block;
+}
+
+.list-artists > li {
+    padding: 10px;
+}
+
+.list-artists a{
+	color:#000;
+}
+
+.rating{
+	margin:0;
+	padding:0;
+}
+.rating > li {
+    padding: 5px;
+}
+
+.rating > li i {
+    font-size:20px;
+    color:grey;
+}
+
+.rating > li i.active {
+    color:#1ed760;
+    font-weight: bold;
+}
+
+ul.nav.navbar-nav {
+    width: 100%;
+    display:block;
+}
+
+ul li a{color:#fff;}
+
+.footer{
+	background:#000;
+	color:#fff;
+}
+
+.page-content{
+	padding-bottom:200px;
+	padding-top:50px;
+
+}
+.content{
+	min-height:100vh;
+}
+
+.login-header{
+	width:100%;
+	text-align: center;
+	padding: 40px;
+}
+
+.spotify-icon{
+	width:30px;
+	margin-right: 10px
+}
+
+.footer img {
+    width: 150px;
+}
+
+.footer {
+    background: #000;
+    color: #fff;
+    padding: 20px 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.copyright {
+    text-align: right;
+    padding: 25px 0;
+    font-size: 20px;
+}
+
+.copyright a {
+	color:#fff;
+    text-decoration: none;
+}
+
+.form-control {
+    max-width: 500px;
+    display: inline-block;
+}
+
+.search-input {
+    text-align: center;
+}
+
+.fa-spin {
+  animation-duration: 5s; 
+}
+
+.loading{
+	width:100%;
+	padding:20px;
+	text-align: center;
+}
+
+.loading span{
+	color:#1ed760;
+	font-size: 50px
+}
+
+
+
+.circular {
+    animation: rotate 1s linear infinite;
+    height: 50px;
+    transform-origin: center center;
+    width: 50px;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+.preloader-page .circular {
+    margin: 200px auto;
+}
+
+.path {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+    animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+    stroke-linecap: round;
+} 
+
+li.artist {
+    width: 23%;
+    display: inline-block;
+    float: left;
+    border: solid 2px #eee;
+    margin: 7px;
+}
+
+.artist-desc {
+    height: 150px;
+    overflow: auto;
+}
+
+.artist-img {
+    height: 220px;
+    overflow: hidden;
+    background-image: url(/assets/images/artist-default.png);
+    background-size: 100%;
+}
+
+.artist-img img{
+	width:100%;
+}
+
+@keyframes dash{
+	0% {
+	    stroke-dasharray: 1, 200;
+	    stroke-dashoffset: 0;
+	}
+
+	50% {
+	    stroke-dasharray: 89, 200;
+	    stroke-dashoffset: -35px;
+	}
+
+	100% {
+	    stroke-dasharray: 89, 200;
+	    stroke-dashoffset: -124px;
+	}
+}
+
+@keyframes color{
+	100%, 0% {
+	    stroke: #d62d20;
+	}
+	40% {
+	    stroke: #0057e7;
+	}
+
+	66% {
+    stroke: #008744;
+	}
+
+	80%, 90% {
+    stroke: #ffa700;
+	}
+}
+
+
+
+
